@@ -1,22 +1,12 @@
 package com.example.coolweather.db;
 
-import org.litepal.LitePalApplication;
+import org.litepal.crud.LitePalSupport;
 
-public class County extends LitePalApplication {
+public class County extends LitePalSupport {
     private int id;
     private String countyName;
     private String weatherId;
     private int cityId;
-
-    public County() {
-    }
-
-    public County(int id, String countyName, String weatherId, int cityId) {
-        this.id = id;
-        this.countyName = countyName;
-        this.weatherId = weatherId;
-        this.cityId = cityId;
-    }
 
     public int getId() {
         return id;
